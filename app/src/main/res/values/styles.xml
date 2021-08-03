@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="anim_home_add_popup" parent="@android:style/Animation">
+         <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+         <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+    <style name="anim_home_compile_popup" parent="@android:style/Animation">
+         <item name="android:windowEnterAnimation">@anim/popup_compile_in</item>
+         <item name="android:windowExitAnimation">@anim/popup_compile_out</item>
+    </style>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="44dp"
+    >
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:gravity="center"
+        android:lines="1"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/color_33DAE1E6"
+        android:textSize="14sp"
+        android:textColor="#616466"
+        android:text="CT4"
+        />
+
+
+</FrameLayout>

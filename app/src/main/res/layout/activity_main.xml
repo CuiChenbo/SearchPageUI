@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="42dp">
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:src="@drawable/icon_add"
+            android:scaleType="fitCenter"
+            android:paddingLeft="24dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="45dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_height="41dp"/>
+
+        <LinearLayout
+            android:layout_toLeftOf="@id/iv_add"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:background="#F5F5F5"
+            android:layout_height="30dp">
+            <ImageView
+                android:src="@drawable/ic_search"
+                android:layout_alignParentRight="true"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                />
+
+            <com.cuichen.searchpageui.view.UpRollView
+                android:id="@+id/up_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"
+        android:layout_below="@id/layout_search"
+        app:tabIndicatorFullWidth="false"
+        app:tabTextColor="#FFAAB0B3"
+        app:tabSelectedTextColor="#FF616466"
+        />
+
+    <com.cuichen.searchpageui.view.UpDownSlideEventViewPage
+        android:id="@+id/viewpage"
+        android:layout_below="@id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
